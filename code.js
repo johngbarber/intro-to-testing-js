@@ -7,6 +7,6 @@ function isSeven(input) {
     return input == 7
 }
 
-function sayHello(name){
-    return `Hello ${name}`
+function sayHello(input){
+    return `Hello, ${input}!`
 }

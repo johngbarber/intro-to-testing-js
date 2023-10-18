@@ -39,4 +39,16 @@ describe('sayHello', function () {
     it('should be defined as a function', function() {
         expect(typeof sayHello).toBe('function')
     });
+    it('should return a string when called', function() {
+        expect(typeof sayHello()).toBe("string")
+    });
+    it('should return a string of "Hello, Jane! when passed a string of "Jane"', function() {
+        expect(sayHello("Jane")).toBe("Hello, Jane!")
+    });
+    it('should return a string of "Hello, Alex! when passed a string of "Alex"', function() {
+        expect(sayHello("Alex")).toBe("Hello, Alex!")
+    });
+    it('should return a string of "Hello, Pat! when passed a string of "Pat"', function() {
+        expect(sayHello("Pat")).toBe("Hello, Pat!")
+    });
 })
